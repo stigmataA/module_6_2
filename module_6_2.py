@@ -22,7 +22,7 @@ class Vehicle:
         print(self.get_color())
         print(self.get_horsepower())
         print(f'Владелец: {self.owner}')
-        
+
     def set_color(self, new_color: str):  # метод изменения цвета автомобиля
         if new_color.lower() in (color.lower() for color in self.__COLOR_VARIANTS):
             self.__color = new_color
@@ -49,4 +49,4 @@ vehicle1.set_color('BLACK')  # Смена цвета на BLACK
 vehicle1.owner = 'Vasyok'  # имя владельца
 
 vehicle1.print_info()
-vehicle1.get_passengers_limit()
+
